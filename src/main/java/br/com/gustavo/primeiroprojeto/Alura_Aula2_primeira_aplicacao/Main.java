@@ -20,5 +20,9 @@ public class Main {
                 Ano de lançamento
                 """ + anoDeLancamento;
         System.out.println(sinopse);
+
+        //Fiz a conversão de double para int (int) - CASTING
+        int classificacao= (int) (media/2);
+        System.out.println(classificacao);
     }
 }
