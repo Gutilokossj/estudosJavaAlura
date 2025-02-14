@@ -1,4 +1,4 @@
-package br.com.gustavo.primeiroprojeto.prmeira_aplicacao.Alura_Aula2_primeira_aplicacao;
+package br.com.gustavo.primeiroprojeto.primeira_aplicacao;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package br.com.gustavo.primeiroprojeto.prmeira_aplicacao.Alura_Aula1_primeira_aplicacao.Exercicios;
+package br.com.gustavo.primeiroprojeto.primeira_aplicacao.Alura_Aula1_primeira_aplicacao.Exercicios;
 
 public class EstudosAula1 {
 
