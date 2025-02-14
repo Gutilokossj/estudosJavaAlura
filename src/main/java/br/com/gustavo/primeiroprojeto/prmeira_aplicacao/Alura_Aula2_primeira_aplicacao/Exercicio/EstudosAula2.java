@@ -1,4 +1,4 @@
-package br.com.gustavo.primeiroprojeto.Alura_Aula2_primeira_aplicacao.Exercicio;
+package br.com.gustavo.primeiroprojeto.prmeira_aplicacao.Alura_Aula2_primeira_aplicacao.Exercicio;
 
 public class EstudosAula2 {
     public static void main(String[] args) {
@@ -30,9 +30,9 @@ public class EstudosAula2 {
         int temperaturaFahrenheit =  (int) (temperaturaCelsius * 1.8) + 32;
 
         String resultadoTemperatura = """
-                A temperatura em Graus Celsius e: """ + temperaturaCelsius + """
+                A temperatura em Graus Celsius e:  """ + temperaturaCelsius + """
                 
-                A tempratura em Fahrenheit sera de: """ + temperaturaFahrenheit + """
+                A tempratura em Fahrenheit sera de:  """ + temperaturaFahrenheit + """
                 """;
 
         System.out.println(resultadoTemperatura);
