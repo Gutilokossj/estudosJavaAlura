@@ -1,4 +1,4 @@
-package br.com.gustavo.primeiroprojeto.primeira_aplicacao.Alura_Aula2_primeira_aplicacao;
+package br.com.gustavo.primeiroprojeto.primeira_aplicacao.Alura_Aula2;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,6 +22,9 @@ public class Main {
         System.out.println(sinopse);
 
         //Fiz a conversão de double para int (int) - CASTING
+        //Sempre que for "perder" valor, fazer conversão, nesse exemplo seria 8,033333333333333/2 = 4,016666666666667
+        //Converti para (int) pra poder transformar em 4
+
         int classificacao= (int) (media/2);
         System.out.println(classificacao);
     }
