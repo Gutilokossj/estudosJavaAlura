@@ -22,6 +22,9 @@ public class Main {
         System.out.println(sinopse);
 
         //Fiz a conversão de double para int (int) - CASTING
+        //Sempre que for "perder" valor, fazer conversão, nesse exemplo seria 8,033333333333333/2 = 4,016666666666667
+        //Converti para (int) pra poder transformar em 4
+
         int classificacao= (int) (media/2);
         System.out.println(classificacao);
     }
