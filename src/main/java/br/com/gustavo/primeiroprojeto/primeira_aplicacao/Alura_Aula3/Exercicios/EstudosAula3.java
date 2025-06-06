@@ -1,5 +1,6 @@
 package br.com.gustavo.primeiroprojeto.primeira_aplicacao.Alura_Aula3.Exercicios;
 
+import java.sql.SQLOutput;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -8,15 +9,16 @@ public class EstudosAula3 {
         System.out.println("// ANOTACOES DE ESTUDO EM JAVA//");
 
         // Chamando os métodos dentro do main para que sejam executados
-        exercicio1();
-        jogoAdvinhacao(); //Professor do alura que fez
-        exercicio2();
-        exercicio3();
-        exercicio4();
-        exercicio5();
-        tabuada();
-        exercicio6();
-        exercicio7();
+//        exercicio1();
+//        jogoAdvinhacao(); //Professor do alura que fez
+//        exercicio2();
+//        exercicio3();
+//        exercicio4();
+//        exercicio5();
+//        tabuada();
+//        exercicio6();
+//        exercicio7();
+        exercicio8();
     }
 
     //Jogo de advinhação, que deve gerar um número aleatório entre 0 a 100, para o usuário
@@ -187,24 +189,24 @@ public class EstudosAula3 {
         }
     }
 
-    public static void exercicio6(){
+    public static void exercicio6() {
         Scanner leitura = new Scanner(System.in);
         System.out.println("Digite um número: (Vou verificar se é par ou impar");
         int numeroDigitado = leitura.nextInt();
 
-            //Verifica se o resto da divisã é = 0
-            if (numeroDigitado % 2 == 0) {
-                System.out.println("O número digitado: " + numeroDigitado + ", é par!");
-            } else {
-                System.out.println("O número digitado: " + numeroDigitado + ", é impar!");
-            }
+        //Verifica se o resto da divisã é = 0
+        if (numeroDigitado % 2 == 0) {
+            System.out.println("O número digitado: " + numeroDigitado + ", é par!");
+        } else {
+            System.out.println("O número digitado: " + numeroDigitado + ", é impar!");
         }
+    }
 
-        //ESSE AQUI EU COLOQUEI SÓ PRA ANOTAR, MAS NADA DE NOVO, APENAS UM FOR
-        //Com alguns cálculos matemáticos que eu acho desnecessário na minha vida!!
-        //O mais interessante é o fatorial *=i que seria tipo fatorial = fatorial * i
+    //ESSE AQUI EU COLOQUEI SÓ PRA ANOTAR, MAS NADA DE NOVO, APENAS UM FOR
+    //Com alguns cálculos matemáticos que eu acho desnecessário na minha vida!!
+    //O mais interessante é o fatorial *=i que seria tipo fatorial = fatorial * i
 
-    public static void exercicio7(){
+    public static void exercicio7() {
         Scanner leitura = new Scanner(System.in);
         System.out.println("Digita um número: (Vou verifica o fatorial dele");
         int numeroDigitado = leitura.nextInt();
@@ -217,4 +219,40 @@ public class EstudosAula3 {
 
         System.out.println("O fatorial de " + numeroDigitado + " é: " + fatorial);
     }
-}
+
+    public static void exercicio8() {
+        Scanner leitura = new Scanner(System.in);
+        System.out.println("Voce quer fazer isso? (1 = SIM | 0 = NÃO)");
+        int decisao1 = leitura.nextInt();
+        if (decisao1 == 0) {
+            System.out.println("Voce pode fazer isso? (1 = SIM | 0 = NÃO)");
+            int decisao2 = leitura.nextInt();
+            if (decisao2 == 0) {
+                System.out.println("Não, não faça isso!");
+            } else {
+                System.out.println("Voce deve fazer isso? (1 = SIM | 0 = NÃO)");
+                int decisao3 = leitura.nextInt();
+                if (decisao3 == 0) {
+                    System.out.println("Não, não faça isso!");
+                } else {
+                    System.out.println("Sim, pode fazer isso...");
+                }
+            }
+        }
+            if (decisao1 == 1) {
+                System.out.println("Voce pode fazer isso? (1 = SIM | 0 = NÃO)");
+                int decisao2 = leitura.nextInt();
+                if (decisao2 == 0) {
+                    System.out.println("Não, não faça isso!");
+                } else {
+                    System.out.println("Voce deve fazer isso? (1 = SIM | 0 = NÃO)");
+                    int decisao3 = leitura.nextInt();
+                    if (decisao3 == 0) {
+                        System.out.println("Não, não faça isso!");
+                    } else {
+                        System.out.println("Sim, pode fazer isso...");
+                    }
+                }
+            }
+        }
+    }
