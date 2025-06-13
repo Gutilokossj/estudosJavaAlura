@@ -9,15 +9,15 @@ public class EstudosAula3 {
         System.out.println("// ANOTACOES DE ESTUDO EM JAVA//");
 
         // Chamando os métodos dentro do main para que sejam executados
-//        exercicio1();
-//        jogoAdvinhacao(); //Professor do alura que fez
-//        exercicio2();
-//        exercicio3();
-//        exercicio4();
-//        exercicio5();
-//        tabuada();
-//        exercicio6();
-//        exercicio7();
+        exercicio1();
+        jogoAdvinhacao(); //Professor do alura que fez
+        exercicio2();
+        exercicio3();
+        exercicio4();
+        exercicio5();
+        tabuada();
+        exercicio6();
+        exercicio7();
         exercicio8();
     }
 
@@ -220,39 +220,33 @@ public class EstudosAula3 {
         System.out.println("O fatorial de " + numeroDigitado + " é: " + fatorial);
     }
 
-    public static void exercicio8() {
-        Scanner leitura = new Scanner(System.in);
-        System.out.println("Voce quer fazer isso? (1 = SIM | 0 = NÃO)");
-        int decisao1 = leitura.nextInt();
-        if (decisao1 == 0) {
-            System.out.println("Voce pode fazer isso? (1 = SIM | 0 = NÃO)");
-            int decisao2 = leitura.nextInt();
-            if (decisao2 == 0) {
-                System.out.println("Não, não faça isso!");
+        public static void exercicio8() {
+            Scanner input = new Scanner(System.in);
+            boolean deve = perguntar("Voce deve fazer isso?", input);
+            if(deve) {
+                responder(true);
             } else {
-                System.out.println("Voce deve fazer isso? (1 = SIM | 0 = NÃO)");
-                int decisao3 = leitura.nextInt();
-                if (decisao3 == 0) {
-                    System.out.println("Não, não faça isso!");
+                boolean quer = perguntar("Voce quer fazer isso?", input);
+                if(quer) {
+                    boolean pode = perguntar("Voce pode fazer isso?", input);
+                    responder(pode);
                 } else {
-                    System.out.println("Sim, pode fazer isso...");
+                    responder(false);
                 }
             }
         }
-            if (decisao1 == 1) {
-                System.out.println("Voce pode fazer isso? (1 = SIM | 0 = NÃO)");
-                int decisao2 = leitura.nextInt();
-                if (decisao2 == 0) {
-                    System.out.println("Não, não faça isso!");
-                } else {
-                    System.out.println("Voce deve fazer isso? (1 = SIM | 0 = NÃO)");
-                    int decisao3 = leitura.nextInt();
-                    if (decisao3 == 0) {
-                        System.out.println("Não, não faça isso!");
-                    } else {
-                        System.out.println("Sim, pode fazer isso...");
-                    }
-                }
+
+        private static boolean perguntar(String pergunta, Scanner scanner) {
+            System.out.printf("%s (1 = SIM | 0 = NÃO)%n", pergunta);
+            int resposta = scanner.nextInt();
+            return resposta == 1;
+        }
+
+        private static void responder(boolean resposta) {
+            if(resposta) {
+                System.out.println("Sim, pode fazer isso...");
+            } else {
+                System.out.println("Não, não faça isso!");
             }
         }
     }
